@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">560179071512-72754uhbnkltucjb1f188bfplo0hcml3.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://find-me-8dbae.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">560179071512</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRWKDjO3B0R21YIZeqfMeNyjqE8ykqzls</string>
+    <string name="google_app_id" translatable="false">1:560179071512:android:9a498235c058ec8f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRWKDjO3B0R21YIZeqfMeNyjqE8ykqzls</string>
+    <string name="google_storage_bucket" translatable="false">find-me-8dbae.appspot.com</string>
+    <string name="project_id" translatable="false">find-me-8dbae</string>
+</resources>
