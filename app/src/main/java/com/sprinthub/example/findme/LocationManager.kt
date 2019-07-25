@@ -5,8 +5,9 @@ import android.location.Location
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
 import io.reactivex.Observable
+import timber.log.Timber
 
-class LocationManager(private val context: Context) : LocationCallback() {
+class LocationManager(private val context: Context){
 
     private val fusedLocationProvider: FusedLocationProviderClient by lazy {
         LocationServices.getFusedLocationProviderClient(context)
@@ -69,7 +70,8 @@ class LocationManager(private val context: Context) : LocationCallback() {
             }
 
             locationSettingsTask.addOnFailureListener { exception ->
-                emitter.tryOnError(exception)
+                val errorDelivered = emitter.tryOnError(exception)
+                Timber.w(exception, "Error delivered, $errorDelivered")
             }
         }
     }
